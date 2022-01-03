@@ -7,26 +7,33 @@ export default {
   head: {
     title: "demo",
     htmlAttrs: {
-      lang: "en"
+      lang: "en",
     },
-    meta: [{
-      charset: "utf-8"
-    }, {
-      name: "viewport",
-      content: "width=device-width, initial-scale=1"
-    }, {
-      hid: "description",
-      name: "description",
-      content: ""
-    }, {
-      name: "format-detection",
-      content: "telephone=no"
-    }],
-    link: [{
-      rel: "icon",
-      type: "image/x-icon",
-      href: "/favicon.ico"
-    }]
+    meta: [
+      {
+        charset: "utf-8",
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+      {
+        hid: "description",
+        name: "description",
+        content: "",
+      },
+      {
+        name: "format-detection",
+        content: "telephone=no",
+      },
+    ],
+    link: [
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico",
+      },
+    ],
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
@@ -37,17 +44,23 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [],
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [["@nuxtjs/prismic", {
-    endpoint: smConfig.apiEndpoint || ""
-  }], ["nuxt-sm"]],
+  modules: [
+    [
+      "@nuxtjs/prismic",
+      {
+        endpoint: smConfig.apiEndpoint || "",
+      },
+    ],
+    ["nuxt-sm"],
+  ],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    transpile: ["vue-slicezone", "nuxt-sm"]
+    transpile: ["vue-slicezone", "nuxt-sm"],
   },
   storybook: {
     // This is a bug with `getStoriesPaths` and Nuxt that is awaiting to be fixed
-    stories: [...getStoriesPaths().map(path => path.replace("../", "~/")), ...getStoriesPaths()]
+    stories: [...getStoriesPaths().map((path) => path.replace("../", "~/"))],
   },
   // This is a bug with `getStoriesPaths` and Nuxt that is awaiting to be fixed
-  ignore: [...getStoriesPaths().map(path => path.replace("../", "~/"))]
+  ignore: [...getStoriesPaths().map((path) => path.replace("../", "~/"))],
 };
