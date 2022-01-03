@@ -1,1 +1,0 @@
-# prismic-nuxt-sm-storybook

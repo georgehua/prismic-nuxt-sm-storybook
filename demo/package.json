@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "slicemachine": "start-slicemachine",
+    "storybook": "nuxt storybook",
+    "build-storybook": "nuxt storybook build"
+  },
+  "dependencies": {
+    "@nuxtjs/prismic": "^1.4.0",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "nuxt-sm": "^0.0.9",
+    "vue-slicezone": "^0.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/storybook": "3.3.1",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/vue": "6.1.21",
+    "slice-machine-ui": "^0.1.2",
+    "vue-loader": "15.9.6"
+  }
+}
