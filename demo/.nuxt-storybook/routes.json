@@ -1,0 +1,15 @@
+[
+  {
+    "name": "prismic-preview",
+    "path": "/preview",
+    "component": "D:\\\\coding-ground\\\\project demo\\\\prismic-nuxt-sm-storybook\\\\demo\\\\.nuxt-storybook\\\\prismic\\\\pages\\\\preview.vue",
+    "_name": "_3dae2673"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\coding-ground\\\\project demo\\\\prismic-nuxt-sm-storybook\\\\demo\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_73f29164"
+  }
+]
